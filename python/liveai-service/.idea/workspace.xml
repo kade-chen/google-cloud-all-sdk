@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cae34b93-f2b9-424c-9166-25465ad8844f" name="更改" comment="中断重连优化方案">
+      <change afterPath="$PROJECT_DIR$/secrets/wdtest-001-f7a598d7d5e2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/liveai-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/liveai-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gemini_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/gemini_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/websocket_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/websocket_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master-asia" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="30UibQIwGs3E2vz5JvFEdSsI4AO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.live2.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.server.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.websocket_handler.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/work/python/liveai-service/core&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\python\liveai-service\core" />
+      <recent name="D:\work\python\liveai-service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\python\liveai-service\secret" />
+      <recent name="D:\work\python\liveai-service\secrets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="PythonConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.Dockerfile">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="liveai-service" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="liveai-service" />
+          <option name="containerName" value="liveai-service" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="cae34b93-f2b9-424c-9166-25465ad8844f" name="更改" comment="" />
+      <created>1753688622681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753688622681</updated>
+      <workItem from="1753705101536" duration="12906000" />
+      <workItem from="1753771089520" duration="51000" />
+      <workItem from="1753771142689" duration="6528000" />
+      <workItem from="1753839469174" duration="21445000" />
+      <workItem from="1753876479562" duration="30506000" />
+      <workItem from="1754271487134" duration="49689000" />
+      <workItem from="1754876332703" duration="49890000" />
+      <workItem from="1755481901006" duration="16085000" />
+      <workItem from="1755567507001" duration="83773000" />
+      <workItem from="1756693769054" duration="9283000" />
+      <workItem from="1756800040718" duration="16757000" />
+      <workItem from="1756967147240" duration="4439000" />
+      <workItem from="1757037674469" duration="5088000" />
+      <workItem from="1757240209455" duration="68000" />
+      <workItem from="1757302225575" duration="7358000" />
+      <workItem from="1757401099740" duration="42113000" />
+      <workItem from="1757987657105" duration="13445000" />
+      <workItem from="1758162300032" duration="11154000" />
+      <workItem from="1758596796473" duration="58000" />
+      <workItem from="1758635273961" duration="1239000" />
+      <workItem from="1758765645057" duration="31065000" />
+      <workItem from="1759041936964" duration="41865000" />
+      <workItem from="1759974581684" duration="30874000" />
+      <workItem from="1760147482025" duration="6400000" />
+      <workItem from="1760334083837" duration="19772000" />
+      <workItem from="1760424939641" duration="44921000" />
+      <workItem from="1761013612735" duration="40684000" />
+      <workItem from="1761286270015" duration="4792000" />
+      <workItem from="1761552113982" duration="42377000" />
+      <workItem from="1762135943768" duration="54193000" />
+      <workItem from="1762737621758" duration="23801000" />
+      <workItem from="1762782311846" duration="10122000" />
+      <workItem from="1762824358606" duration="1348000" />
+      <workItem from="1762871270603" duration="53000" />
+      <workItem from="1762910238106" duration="4164000" />
+      <workItem from="1762997661581" duration="1311000" />
+      <workItem from="1763044363656" duration="1264000" />
+      <workItem from="1763906119384" duration="454000" />
+    </task>
+    <task id="LOCAL-00062" summary="prompt中的地点和时间动态传输">
+      <option name="closed" value="true" />
+      <created>1757556480592</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1757556480593</updated>
+    </task>
+    <task id="LOCAL-00063" summary="按数据包打印输出日志">
+      <option name="closed" value="true" />
+      <created>1757560943630</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1757560943630</updated>
+    </task>
+    <task id="LOCAL-00064" summary="按数据包打印输出日志">
+      <option name="closed" value="true" />
+      <created>1757561591120</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1757561591120</updated>
+    </task>
+    <task id="LOCAL-00065" summary="按数据包打印输出日志">
+      <option name="closed" value="true" />
+      <created>1757570406737</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1757570406738</updated>
+    </task>
+    <task id="LOCAL-00066" summary="补充提交">
+      <option name="closed" value="true" />
+      <created>1757570469842</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1757570469842</updated>
+    </task>
+    <task id="LOCAL-00067" summary="补充提交">
+      <option name="closed" value="true" />
+      <created>1757575174738</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1757575174739</updated>
+    </task>
+    <task id="LOCAL-00068" summary="补充提交">
+      <option name="closed" value="true" />
+      <created>1757576413714</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1757576413714</updated>
+    </task>
+    <task id="LOCAL-00069" summary="更新mq配置">
+      <option name="closed" value="true" />
+      <created>1757587901241</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1757587901242</updated>
+    </task>
+    <task id="LOCAL-00070" summary="更新mq配置">
+      <option name="closed" value="true" />
+      <created>1757588007477</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1757588007477</updated>
+    </task>
+    <task id="LOCAL-00071" summary="更新支付技能的description">
+      <option name="closed" value="true" />
+      <created>1757666690597</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1757666690598</updated>
+    </task>
+    <task id="LOCAL-00072" summary="根据测试环境的mq地址">
+      <option name="closed" value="true" />
+      <created>1758005021512</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1758005021513</updated>
+    </task>
+    <task id="LOCAL-00073" summary="推送chatlog消息修改role类型获取方式">
+      <option name="closed" value="true" />
+      <created>1758162692717</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1758162692718</updated>
+    </task>
+    <task id="LOCAL-00074" summary="修改逻辑，不再向端侧回传turn_complete指令">
+      <option name="closed" value="true" />
+      <created>1758766200950</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1758766200951</updated>
+    </task>
+    <task id="LOCAL-00075" summary="更新为模型gemini-live-2.5-flash-preview-native-audio-09-2025">
+      <option name="closed" value="true" />
+      <created>1758771033479</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1758771033479</updated>
+    </task>
+    <task id="LOCAL-00076" summary="更新模型使用的prompt">
+      <option name="closed" value="true" />
+      <created>1758855516387</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1758855516387</updated>
+    </task>
+    <task id="LOCAL-00077" summary="更新chatlog消息逻辑">
+      <option name="closed" value="true" />
+      <created>1758869857177</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1758869857177</updated>
+    </task>
+    <task id="LOCAL-00078" summary="修改function_calling执行逻辑，除了支付技能外，其他的技能都不进行语音回复">
+      <option name="closed" value="true" />
+      <created>1759126939362</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1759126939363</updated>
+    </task>
+    <task id="LOCAL-00079" summary="补充function_calling执行逻辑，除了支付技能外，其他的技能都不进行语音回复">
+      <option name="closed" value="true" />
+      <created>1759230372521</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1759230372521</updated>
+    </task>
+    <task id="LOCAL-00080" summary="补充function_calling执行逻辑，除了支付技能外，其他的技能都不进行语音回复">
+      <option name="closed" value="true" />
+      <created>1759230426252</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1759230426252</updated>
+    </task>
+    <task id="LOCAL-00081" summary="增加中断重连机制">
+      <option name="closed" value="true" />
+      <created>1759237779651</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1759237779651</updated>
+    </task>
+    <task id="LOCAL-00082" summary="function calling + google search  support 一起使用">
+      <option name="closed" value="true" />
+      <created>1759994381163</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1759994381164</updated>
+    </task>
+    <task id="LOCAL-00083" summary="连接异常处理">
+      <option name="closed" value="true" />
+      <created>1759998805788</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1759998805788</updated>
+    </task>
+    <task id="LOCAL-00084" summary="处理大模型回复中包含中括号的数字索引">
+      <option name="closed" value="true" />
+      <created>1760088240102</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1760088240102</updated>
+    </task>
+    <task id="LOCAL-00085" summary="处理会话恢复的逻辑">
+      <option name="closed" value="true" />
+      <created>1760344792558</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1760344792558</updated>
+    </task>
+    <task id="LOCAL-00086" summary="优化建立连接逻辑，缩短建联时间">
+      <option name="closed" value="true" />
+      <created>1760426425742</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1760426425743</updated>
+    </task>
+    <task id="LOCAL-00087" summary="更新系统级prompt">
+      <option name="closed" value="true" />
+      <created>1760493233441</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1760493233441</updated>
+    </task>
+    <task id="LOCAL-00088" summary="去掉function calling，保留web search">
+      <option name="closed" value="true" />
+      <created>1760582012684</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1760582012685</updated>
+    </task>
+    <task id="LOCAL-00089" summary="优化配置信息处理逻辑">
+      <option name="closed" value="true" />
+      <created>1760610296071</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1760610296072</updated>
+    </task>
+    <task id="LOCAL-00090" summary="增强异步处理建联逻辑">
+      <option name="closed" value="true" />
+      <created>1760614119504</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1760614119504</updated>
+    </task>
+    <task id="LOCAL-00091" summary="更新system-instructions">
+      <option name="closed" value="true" />
+      <created>1760671310594</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1760671310594</updated>
+    </task>
+    <task id="LOCAL-00092" summary="测试优化方案">
+      <option name="closed" value="true" />
+      <created>1761027027920</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1761027027920</updated>
+    </task>
+    <task id="LOCAL-00093" summary="性能优化方案">
+      <option name="closed" value="true" />
+      <created>1761032148533</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1761032148533</updated>
+    </task>
+    <task id="LOCAL-00094" summary="性能优化方案">
+      <option name="closed" value="true" />
+      <created>1761034588151</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1761034588151</updated>
+    </task>
+    <task id="LOCAL-00095" summary="更新system-instructions">
+      <option name="closed" value="true" />
+      <created>1761044769020</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1761044769020</updated>
+    </task>
+    <task id="LOCAL-00096" summary="去除掉交流中记录的空格">
+      <option name="closed" value="true" />
+      <created>1761127962109</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1761127962109</updated>
+    </task>
+    <task id="LOCAL-00097" summary="去除掉交流中记录的空格">
+      <option name="closed" value="true" />
+      <created>1761128585457</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1761128585457</updated>
+    </task>
+    <task id="LOCAL-00098" summary="去除掉交流中记录的空格并更新system-instructions">
+      <option name="closed" value="true" />
+      <created>1761187928132</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1761187928132</updated>
+    </task>
+    <task id="LOCAL-00099" summary="性能优化方案">
+      <option name="closed" value="true" />
+      <created>1761637339433</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1761637339433</updated>
+    </task>
+    <task id="LOCAL-00100" summary="更新system_instructions,处理未开摄像头时模型回复问题">
+      <option name="closed" value="true" />
+      <created>1761644447698</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1761644447698</updated>
+    </task>
+    <task id="LOCAL-00101" summary="更新system_instructions">
+      <option name="closed" value="true" />
+      <created>1761705542105</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1761705542105</updated>
+    </task>
+    <task id="LOCAL-00102" summary="清理响应结果中的不合理双引号">
+      <option name="closed" value="true" />
+      <created>1761730976414</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1761730976414</updated>
+    </task>
+    <task id="LOCAL-00103" summary="处理大模型定位混乱的问题">
+      <option name="closed" value="true" />
+      <created>1761816692495</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1761816692495</updated>
+    </task>
+    <task id="LOCAL-00104" summary="更改日志文件格式和路径">
+      <option name="closed" value="true" />
+      <created>1761817493612</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1761817493612</updated>
+    </task>
+    <task id="LOCAL-00105" summary="增加大模型上下文限制">
+      <option name="closed" value="true" />
+      <created>1761893948465</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1761893948465</updated>
+    </task>
+    <task id="LOCAL-00106" summary="中断重连优化方案">
+      <option name="closed" value="true" />
+      <created>1762243497650</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1762243497650</updated>
+    </task>
+    <task id="LOCAL-00107" summary="中断重连优化方案">
+      <option name="closed" value="true" />
+      <created>1762327278350</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1762327278350</updated>
+    </task>
+    <task id="LOCAL-00108" summary="中断重连优化方案">
+      <option name="closed" value="true" />
+      <created>1762328319087</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1762328319087</updated>
+    </task>
+    <task id="LOCAL-00109" summary="中断重连优化方案">
+      <option name="closed" value="true" />
+      <created>1762330538885</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1762330538885</updated>
+    </task>
+    <task id="LOCAL-00110" summary="中断重连优化方案">
+      <option name="closed" value="true" />
+      <created>1762331673527</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1762331673527</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master-eu1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新chatlog消息逻辑" />
+    <MESSAGE value="修改function_calling执行逻辑，除了支付技能外，其他的技能都不进行语音回复" />
+    <MESSAGE value="补充function_calling执行逻辑，除了支付技能外，其他的技能都不进行语音回复" />
+    <MESSAGE value="增加中断重连机制" />
+    <MESSAGE value="function calling + google search  support 一起使用" />
+    <MESSAGE value="连接异常处理" />
+    <MESSAGE value="处理大模型回复中包含中括号的数字索引" />
+    <MESSAGE value="处理会话恢复的逻辑" />
+    <MESSAGE value="优化建立连接逻辑，缩短建联时间" />
+    <MESSAGE value="更新系统级prompt" />
+    <MESSAGE value="去掉function calling，保留web search" />
+    <MESSAGE value="优化配置信息处理逻辑" />
+    <MESSAGE value="增强异步处理建联逻辑" />
+    <MESSAGE value="测试优化方案" />
+    <MESSAGE value="更新system-instructions" />
+    <MESSAGE value="去除掉交流中记录的空格" />
+    <MESSAGE value="去除掉交流中记录的空格并更新system-instructions" />
+    <MESSAGE value="性能优化方案" />
+    <MESSAGE value="更新system_instructions,处理未开摄像头时模型回复问题" />
+    <MESSAGE value="更新system_instructions" />
+    <MESSAGE value="清理响应结果中的不合理双引号" />
+    <MESSAGE value="处理大模型定位混乱的问题" />
+    <MESSAGE value="更改日志文件格式和路径" />
+    <MESSAGE value="增加大模型上下文限制" />
+    <MESSAGE value="中断重连优化方案" />
+    <option name="LAST_COMMIT_MESSAGE" value="中断重连优化方案" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/liveai_service$websocket_handler.coverage" NAME="websocket_handler Coverage Results" MODIFIED="1762768045571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/liveai_service$server.coverage" NAME="server Coverage Results" MODIFIED="1762825513167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/liveai_service$live2.coverage" NAME="live2 覆盖结果" MODIFIED="1761817321783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../fun/xwechat_files/wxid_7u1dl07j5o4a22_3163/msg/file/2025-08" />
+  </component>
+</project>
